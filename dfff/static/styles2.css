@@ -1,0 +1,158 @@
+*
+{
+  background-color: rgb(36, 33, 33);
+  color: #00FF1F;
+  font-size: large;
+}
+.maincon
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mainh
+{
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+#mainh::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 100px;
+  background-color: #8070d4;
+  background-clip: content-box;
+}
+
+ #mainh::-webkit-scrollbar {
+  width: 15px; 
+}
+
+#mainh::-webkit-scrollbar-track {
+background-color: black;
+}
+
+.return{
+  width: 50%;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%,-95%);
+}
+
+.scr::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-color: #dc65a2;
+  background-clip: content-box;
+}
+
+.scr::-webkit-scrollbar {
+  width: 7px;
+  height: 9px
+}
+
+.scr::-webkit-scrollbar-track {
+background-color:#65DC9F
+}
+
+.outer
+{
+  position: relative;
+  margin: 0 50px;
+  
+}
+.button
+{
+  height: 43px;
+  width: 28%;
+  
+}
+.outer button , .outer span
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.outer button
+{
+  width:94%;
+  z-index: 9;
+  height: 40px;
+  padding: 10px;
+  transition: 0.5s;
+  color: #03e9f4;
+  letter-spacing: 3px;
+}
+.outer span
+{
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+.outer:hover span:nth-of-type(1)
+{
+  filter: blur(7px);
+}
+.outer:hover span:nth-of-type(2)
+{
+  filter: blur(14px);
+}
+.outer:hover
+{
+  background: linear-gradient(#14ffe9 , #ffeb3b , #ff00e0);
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.yoma
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.longurl
+{
+  margin-right: 20px;
+  color: whitesmoke;
+  display: inline;
+  max-height: 6vh;
+  overflow-x: scroll;
+  overflow-y:visible;
+  font-family: Bradley Hand, cursive;
+}
+
+.shorturl
+{
+  color: whitesmoke;
+  max-height: 65px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  font-family: Bradley Hand, cursive;
+}
+
+h1
+{
+  display: grid;
+  background-color: #ff00e0;
+  place-items: center;
+  text-shadow: lightseagreen;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.forh2
+{
+  margin-top: 56px;
+}
